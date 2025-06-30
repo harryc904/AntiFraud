@@ -6,7 +6,6 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Progress } from "@/components/ui/progress"
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group"
 import { Label } from "@/components/ui/label"
-import { AlertTriangle, CheckCircle, AlertCircle, ShieldCheck } from "lucide-react"
 import { useStore } from "@/store"
 import { AssessmentResult } from "./result"
 

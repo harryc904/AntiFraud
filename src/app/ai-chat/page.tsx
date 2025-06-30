@@ -4,10 +4,9 @@ import { useState, useRef, useEffect } from "react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Input } from "@/components/ui/input"
-import { Badge } from "@/components/ui/badge"
 import { ScrollArea } from "@/components/ui/scroll-area"
-import { Avatar, AvatarContent, AvatarFallback } from "@/components/ui/avatar"
-import { Send, Bot, User, AlertTriangle, Shield, MessageCircle, Lightbulb } from "lucide-react"
+import { Avatar, AvatarFallback } from "@/components/ui/avatar"
+import { Send, Bot, User, AlertTriangle, MessageCircle, Lightbulb } from "lucide-react"
 import { useStore } from "@/store"
 
 const presetScenarios = [
@@ -268,7 +267,7 @@ export default function AIChatPage() {
                     value={inputValue}
                     onChange={(e) => setInputValue(e.target.value)}
                     placeholder="描述您遇到的情况..."
-                    onKeyPress={(e) => {
+                    onKeyDown={(e) => {
                       if (e.key === 'Enter' && !e.shiftKey) {
                         e.preventDefault()
                         sendMessage(inputValue)

@@ -1,7 +1,7 @@
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { Shield, BookOpen, ClipboardList, MessageCircle, TrendingUp, Users, AlertTriangle } from "lucide-react"
+import { BookOpen, ClipboardList, MessageCircle, TrendingUp, Users, AlertTriangle } from "lucide-react"
 import { FraudTypeChart, RegionPieChart } from "@/components/Charts"
 
 export default function Home() {
