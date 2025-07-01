@@ -3,17 +3,16 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { BookOpen, ClipboardList, MessageCircle, TrendingUp, Users, AlertTriangle } from "lucide-react"
 import { FraudTypeChart, RegionPieChart } from "@/components/Charts"
+import BackgroundPaths from "@/components/BackgroundPaths"
 
 export default function Home() {
   return (
     <div className="flex flex-col min-h-screen">
-      <section className="w-full py-12 md:py-24 lg:py-32 xl:py-48">
-        <div className="container px-4 md:px-6">
+      <section className="relative w-full py-8 md:py-16 lg:py-20 xl:py-24 overflow-hidden">
+        <BackgroundPaths title="守护您的财产安全" />
+        <div className="relative z-20 container px-4 md:px-6">
           <div className="flex flex-col items-center space-y-4 text-center">
             <div className="space-y-2">
-              <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl/none">
-                守护您的财产安全
-              </h1>
               <p className="mx-auto max-w-[700px] text-gray-500 md:text-xl dark:text-gray-400">
                 专业的反诈宣传平台，提供真实案例教育、个人风险评估和智能AI助手，帮助您识别和防范各类电信网络诈骗
               </p>
